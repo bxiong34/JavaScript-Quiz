@@ -1,23 +1,24 @@
-.is-active {
-    display: flex;
-  }
-  .is-inactive {
-    display: none;
-  }
-
-h1 {
-    text-align: center;
-    padding-top: 50px;
-    font-size: 60px;
+.header {
+text-align: center;
+font-size: 25px;
+margin: 80px 280px 30px 280px;
 }
 
 p {
-    text-align: center;
-    line-height: 40px;
-    padding: 20px 360px 50px 360px;
-    font-size: 20px;
+font-size: 20px;
+line-height: 40px;
 }
 
 div {
   justify-content: center;
 }
+
+
+.is-active {
+  display: flex;
+}
+
+.is-inactive {
+  display: none;
+}
+

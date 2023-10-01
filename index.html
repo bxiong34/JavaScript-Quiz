@@ -6,35 +6,93 @@
 </head>
 
 <body>
-<header>
-    <h1>JavaScript Quiz</h1>
-</header>
-
-    <p>Please answer the following questions to see
+<div id="intro" class="is-active">
+    <div class="header">
+        <h1>JavaScript Quiz</h1>
+        <p>Please answer the following questions to see
         if you understand the basics of JavaScript. 
         Once you have completed the quiz, you will 
         be able to view your highscore, clear your 
         highscore, or restart the quiz again. Best
         of luck! ⭐ ⭐ ⭐
-    </p>
+        </p>
+<!-- start quiz button-->
+        <div id="start-button" class="is-active">
+            <button>Start Quiz</button>
+        </div>
+    </div>
+</div>
 
+<!--view high score button-->
 <div id="pre-game" class="is-active">
     <button id="hi">View High Scores</button>
 </div>
+
+<!--start of game-->
 <div id="game" class="is-inactive">
-    GAME
+<!--60 second timer--> 
+    <div id="Timer"></div>
+        <div id="first-question" class="is-active">
+            <p>
+                What does location.reload(); do?
+            </p>
+                <button class="a">A. It takes you back to the homepage.</button>
+                <button class="b">B. It forces the page to reload.</button>
+                <button class="c">C. It stops the page from reloading.</button>
+                <button class="d">D. It forces a page to reload when you reach that specific page.</button>
+        </div>
+        <div id="second-question" class="is-inactive">
+            <p>
+                Question 2
+            </p>
+                <button class="a">A. </button>
+                <button class="b">B. </button>
+                <button class="c">C. </button>
+                <button class="d">D. </button>
+        </div>
+        <div id="third-question" class="is-inactive">
+            <p>
+                Question 3
+            </p>
+                <button class="a">A. </button>
+                <button class="b">B. </button>
+                <button class="c">C. </button>
+                <button class="d">D. </button>
+        </div>
+        <div id="fourth-question" class="is-inactive">
+            <p>
+                Question 4
+            </p>
+                <button class="a">A. </button>
+                <button class="b">B. </button>
+                <button class="c">C. </button>
+                <button class="d">D. </button>
+        </div>
+        <div id="fifth-question" class="is-inactive">
+            <p>
+                Question 5
+            </p>
+                <button class="a">A. </button>
+                <button class="b">B. </button>
+                <button class="c">C. </button>
+                <button class="d">D. </button>
+        </div>
+    </div>
 </div>
+
+<!--end of game-->
 <div id="game-end" class="is-inactive">
     NOT GAME
 </div>
+
+<!--view highscore & going back-->
 <div id="hi-score" class="is-inactive">
     HI-SCORE
     <button id="back">Go back</button>
 </div>
-    
-<div id="start" class="is-active">
-    <button>Start Quiz</button>
-</div>
+
+
+
 
 <script src="./assets/js/script.js"></script>
 </body>
