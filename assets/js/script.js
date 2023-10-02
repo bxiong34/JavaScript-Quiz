@@ -23,18 +23,20 @@ function startGame() {
     hiScore.setAttribute("class", "is-inactive");
     startButton.setAttribute("class", "is-inactive");
     intro.setAttribute("class", "is-inactive");
+    timer.setAttribute("class", "is-active");
+
+    //currentQuestion=0;
+    
 }
 
-//function to tell if chosen answer is correct/wrong AND
-//also moves on to the next question in 1 second ON
-//CLICK of an answer
-
-// var answerButton = document.getElementsByClassName("answer-button");
-// answerButton.addEventListener("click", ;
+var question = document.getElementById("question")
+var choice = document.getElementsByClassName("choice");
 
 
+var totalQuestions = 5;
 var currentQuestion = 0;
 
+//5 questions for quiz
 var loadQuestions = [
     {
         question: "Where do we link JavaScript in the index.html?",
@@ -64,14 +66,41 @@ var loadQuestions = [
             {choice: "localStorage", answer: true}
         ]
     },
+    {
+        question: "How do you retrieve the contents of an element using innerHTML?",
+        answer: [
+            {choice: "getElementById", answer: false},
+            {choice: "getElementsByClass", answer: false},
+            {choice: "getElementsByClassName", answer: true},
+            {choice: "getElementbyIdName", answer: false}
+        ]
+    },
+    {
+        question: "Which of the following statement is true about '==' and '==='?",
+        answer: [
+            {choice: "'==' checks for values but not datatype. '===' checks for datatype AND values.", answer: true},
+            {choice: "'==' checks for values AND datatype. '===' checks for values but not datatype.", answer: false},
+            {choice: "'==' checks for values. '===' checks for the datatype.", answer: false},
+            {choice: "They are the same and can be used interchangeably.", answer: false}
+        ]
+    },
 ];
+console.log(loadQuestions);
+
+
 
 //push questions and answers to choices html
+
+
+//save score to local storage
+localStorage.setItem(loadQuestions);
+
 
 
 function endGame() {
     game.setAttribute("class", "is-inactive");
     gameEnd.setAttribute("class", "is-active");
+    hiScore.setAttribute("class", "is-active");
 }
 
 function viewHiScore() {
@@ -79,16 +108,20 @@ function viewHiScore() {
     game.setAttribute("class", "is-inactive");
     gameEnd.setAttribute("class", "is-inactive");
     hiScore.setAttribute("class", "is-active");
+    timer.setAttribute("class", "is-inactive");
 }
 
-//when timer ends, message pops up to end game and show user
+//seconds left is not showing on start quiz
+
+//timer will be set to 30 but is 5 for now. when timer ends, message pops up to end game and show user
 //their high score and show the option to go back to intro page
 var timeLeft = 5;
-var time = document.getElementById('Timer');
+var timer = document.getElementById('Timer');
 
 
-game.addEventListener("click", function() {
-    var timer = setInterval(countdown, 1000);
+//when start quiz button is pressed, timer starts
+startButton.addEventListener("click", function() {
+    var time = setInterval(countdown, 1000);
 });
 
 function countdown() {
@@ -98,10 +131,12 @@ function countdown() {
     preGame.setAttribute("class", "is-inactive");
     startButton.setAttribute("class", "is-inactive");
     intro.setAttribute("class", "is-inactive");
+    timer.setAttribute("class", "is-inactive");
   } else {
-    time.innerHTML = timeLeft + ' seconds remaining';
+    timer.innerHTML = timeLeft + " seconds remaining";
     timeLeft--;
   }
 }
+
 
 

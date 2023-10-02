@@ -31,28 +31,40 @@
 <!--start of game-->
 <div id="game" class="is-inactive">
 <!--60 second timer--> 
-    <div id="Timer"></div>
-        <div id="questions" class="is-active">
-            <button class="choices-button"></button>
-            <button class="choices-button"></button>
-            <button class="choices-button"></button>
-            <button class="choices-button"></button>
+    <div id="Timer" class="is-inactive"></div>
+        <div id="question" class="is-active">
+            <button class="choice" id="A">A.</button>
+            <button class="choice" id="B">B.</button>
+            <button class="choice" id="C">C.</button>
+            <button class="choice" id="D">D.</button>
         </div>
     </div>
 </div>
 
+
+
+<!-- <div id="question0" class="is-active">Where do we link JavaScript in the index.html?
+    <div id="choices" class="is-active">
+        <button class="question0-choice0">In the head.</button>
+        <button class="question0-choice1">In the beginning of the body.</button>
+        <button class="question0-choice2">At the end of the body.</button>
+        <button class="question0-choice3">In the footer.</button>
+    </div>
+</div> -->
+
+
+
+
 <!--end of game-->
 <div id="game-end" class="is-inactive">
-    Time's up! How did you do?!
+    Time is up! How did you do?!
 </div>
 
 <!--view highscore & going back-->
 <div id="hi-score" class="is-inactive">
     HI-SCORE
-    <button id="back">Go back</button>
+    <button id="back">Back</button>
 </div>
-
-
 
 
 <script src="./assets/js/script.js"></script>
