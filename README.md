@@ -14,9 +14,11 @@ N/A
 
 When a user clicks on the "Start Quiz" button, a countdown timer will automatically begin. The user will have about 30 seconds to complete a 5-question quiz. Each time the user select an incorrect answer, the countdown will subtract 5 seconds. Once the quiz is complete, they will then see their score and can retake the quiz if they want.
 
-Live site: 
+Live site: https://bxiong34.github.io/JavaScript-Quiz/
 
-
+![Alt text](<assets/images/Screenshot 2023-10-02 at 6.41.41 PM.png>)
+![Alt text](<assets/images/Screenshot 2023-10-02 at 6.41.55 PM.png>)
+![Alt text](<assets/images/Screenshot 2023-10-02 at 6.43.29 PM.png>)
 
 
 ## Credits

@@ -93,7 +93,7 @@ console.log(loadQuestions);
 
 
 //save score to local storage
-localStorage.setItem(loadQuestions);
+// localStorage.setItem(loadQuestions);
 
 
 
