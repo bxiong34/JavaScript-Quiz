@@ -1,20 +1,49 @@
-.header {
-text-align: center;
-font-size: 30px;
-padding: 30px 346px 15px 346px;
+html {
+  text-align: center;
 }
 
 p {
-font-size: 25px;
-line-height: 40px;
+  font-size: 25px;
+  line-height: 40px;
 }
 
 div {
   justify-content: center;
-  padding-top: 50px;
   font-size: 25px;
+  display: block;
 }
 
+html {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.header {
+  text-align: center;
+  font-size: 30px;
+  width: 75vw;
+  margin: 0 auto; 
+  overflow: hidden;
+}
+
+button.choice-btn {
+  display: block;
+}
+
+div#question.is-active {
+  display: block;
+  text-align: left;
+}
+
+div#game.is-active,
+div#hi-score.is-active,
+div#intro.is-active,
+div#choices-container {
+  display: block;
+  text-align: center;
+}
 
 .is-active {
   display: flex;
@@ -24,3 +53,28 @@ div {
   display: none;
 }
 
+button {
+outline: none;
+cursor: pointer;
+font-size: 14px;
+line-height: 1;
+border-radius: 500px;
+transition-property: background-color,border-color,color,box-shadow,filter;
+transition-duration: .3s;
+border: 1px solid transparent;
+letter-spacing: 2px;
+min-width: 160px;
+text-transform: uppercase;
+white-space: normal;
+font-weight: 700;
+text-align: center;
+padding: 16px 14px 18px;
+color: #616467;
+box-shadow: inset 0 0 0 2px #fff890;
+background-color: transparent;
+height: 48px;
+}
+
+button:hover{
+    background-color: #fff890;
+}

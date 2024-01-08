@@ -9,51 +9,34 @@
 <div id="intro" class="is-active">
     <div class="header">
         <h1>JavaScript Quiz</h1>
-        <p>Please answer the following questions to see
-        if you understand the basics of JavaScript. 
-        Once you have completed the quiz, you will 
-        be able to view your highscore, clear your 
-        highscore, or restart the quiz again. Best
-        of luck! ⭐ ⭐ ⭐
+        <p>Please answer the following questions to see if you understand the basics of JavaScript. Once you have completed the quiz, you will be able to view your score, your highscore, or restart the quiz again. Best of luck! ⭐ ⭐ ⭐
         </p>
 <!-- start quiz button-->
         <div id="start-button" class="is-active">
             <button>Start Quiz</button>
         </div>
     </div>
+    <!--view high score button-->
+<div><div id="pre-game" class="is-active">
+    <button id="hi">View High Scores</button>
+</div></div>
 </div>
 
-<!--view high score button-->
-<div id="pre-game" class="is-active">
-    <button id="hi">View High Scores</button>
-</div>
+
 
 <!--start of game-->
 <div id="game" class="is-inactive">
 <!--60 second timer--> 
-    <div id="Timer" class="is-inactive"></div>
+    <div id="timer"></div>
         <div id="question" class="is-active">
-            <button class="choice" id="A">A.</button>
-            <button class="choice" id="B">B.</button>
-            <button class="choice" id="C">C.</button>
-            <button class="choice" id="D">D.</button>
+                  <!-- Container to append questions -->
+      <div id="question-container"></div>
+      <!-- Placeholder for choices -->
+      <div id="choices-container"></div>
+            <!-- <button class="choice-btn"></button> -->
         </div>
     </div>
 </div>
-
-
-
-<!-- <div id="question0" class="is-active">Where do we link JavaScript in the index.html?
-    <div id="choices" class="is-active">
-        <button class="question0-choice0">In the head.</button>
-        <button class="question0-choice1">In the beginning of the body.</button>
-        <button class="question0-choice2">At the end of the body.</button>
-        <button class="question0-choice3">In the footer.</button>
-    </div>
-</div> -->
-
-
-
 
 <!--end of game-->
 <div id="game-end" class="is-inactive">
@@ -62,7 +45,7 @@
 
 <!--view highscore & going back-->
 <div id="hi-score" class="is-inactive">
-    HI-SCORE
+    <p id="your-hi-score"></p>
     <button id="back">Back</button>
 </div>
 
